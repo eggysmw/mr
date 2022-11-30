@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio | fawwaz muhammad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+<script src="https://kit.fontawesome.com/20b6197d52.js" crossorigin="anonymous"></script>
+
+<body>
+    <!-- Navbar -->
+    </div>
+    <nav>
+        <ul>
+
+            <th class="header">My Portfolio</th>
+            <li><a href="#Other">Other</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Home">Home</a></li>
+
+        </ul>
+    </nav>
+
+
+
+    </header>
+    <!-- Akhir Navbar -->
+    <div class="jumbotron text-center">
+        <center>
+            <img src="img/1. Asian Man.png" width="200" height="200">
+            <h1>I`m Fawwaz</h1>
+        </center>
+    </div>
+    <article class="card text-center">
+        <section id="About">
+            <center>
+                <h2>About</h2>
+            </center>
+            <p> Perkenalkan nama saya fawwaz muhammad widiyanto, Saya terlahir dibumi ini, bagian jawa tengah tepatnya
+                di
+                purworejo 29 november 2007 dan sekarang saya tinggal di Bekasi, bersetatus pelajar di sekolah di Smk
+                Madinatul quran, mengambil jurusan
+                Network Engineering (Tkj) dan saya sendiri baru menginjak umur 15 tahun.
+            </p>
+
+        </section>
+    </article>
+    <article class="card text-center">
+        <section id="Other">
+            <h2>Other</h2>
+            <div class="keren">
+                <img src="Screenshot (37).png" style="border: 5px solid #ffff;" align="left" margin="left">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('hobby')">hobby</p>
+                </div>
+                <div class="tab-contents active-tab" id="Education">
+                    <ul style="margin-left: 40%;">
+                        <Li><span>TK</span><br>Islam Al-hillal, Bekasi</Li>
+                        <Li><span>SD</span><br>Islam Al-hillal, Bekasi</Li>
+                        <Li><span>SMP</span><br>Pondok pesantren Sabilunnjah, Bandung</Li>
+                        <Li><span>SMK</span><br>Madinatul quran, joggol</Li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="hobby">
+                    <ul style="margin-left: 52%;">
+                        <Li><span>treveling</span><br>ke gunung</Li>
+                        <Li><span>olahraga</span><br>Renang</Li>
+                        <Li><span>Main</span><br>Basket Ball</Li>
+                        <Li><span>Main</span><br> Bola</Li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+    </article>
+
+    <article class="profile card">
+        <section>
+            <br>
+            <footer>
+                <p>Sekian Terima kasih</p>
+                <p>Terima kasih telah mengunjungi website portofolio pribadi saya, dan web ini terhubung ke sosial media
+                    pribadi
+                    saya.
+                </p>
+
+                <div class="social">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/fawwaz.muhammad.754/"><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                </div>
+
+                <br>
+                <p class="end">CopyRight By fawwaz muhammad</p>
+                </br>
+            </footer>
+        </section>
+    </article>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+
+</html>
